@@ -1,2 +1,9 @@
-console.log(new Date(8.64e15).toString()); // "Sat Sep 13 275760 00:00:00 GMT+0000 (Coordinated Universal Time)"
-console.log(new Date(8.64e15 + 1).toString()); // "Invalid Date"
+// 今日の日付を取得
+const today = new Date();
+
+// 年、月、日をDateクラスの関数で取得
+const year = today.getFullYear();
+const month = today.getMonth() + 1; 
+const day = today.getDate();
+
+console.log(`${year}年${month}月${day}日`);
