@@ -1,5 +1,12 @@
 holidays = ["正月","成人の日","建国記念日","天皇誕生日","春分の日","昭和の日","憲法記念日","みどりの日","こどもの日","海の日","山の日","敬老の日","秋分の日","スポーツの日","文化の日","勤労感謝の日"]
 
-for holiday in holidays:
-    print(holiday)
-  
+for (let i = 0; i < holidays.length; i += 1) {
+    console.log(holidays[i]);
+  }
+//   i+=1はi=i+1のこと
+// 　i++でも同じ
+let j = 0;
+while (j < holidays.length) {
+    console.log(holidays[j]);
+    j += 1
+  }
